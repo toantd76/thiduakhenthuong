@@ -1,0 +1,77 @@
+export interface RawPersonnelItem {
+  stt: number;
+  fullName: string;
+  birthDate: string;
+  gender: 'Nam' | 'Nữ';
+  specialty: string;
+  currentPosition: string;
+  department: string;
+  cccd: string;
+}
+
+export const RAW_PERSONNEL_DATA: RawPersonnelItem[] = [
+  { stt: 1, fullName: 'Trần Công Toàn', birthDate: '16/10/1976', gender: 'Nam', specialty: 'Tin học', currentPosition: 'Hiệu trưởng', department: 'Toán - Tin', cccd: '040076003624' },
+  { stt: 2, fullName: 'Tô Minh Chí', birthDate: '28/11/1978', gender: 'Nam', specialty: 'Toán', currentPosition: 'Giáo viên', department: 'Toán - Tin', cccd: '052078011788' },
+  { stt: 3, fullName: 'Nguyễn Công Duẩn', birthDate: '22/01/1998', gender: 'Nam', specialty: 'Toán', currentPosition: 'Bí thư đoàn TN', department: 'Toán - Tin', cccd: '067098004585' },
+  { stt: 4, fullName: 'Trần Xuân Nguyễn', birthDate: '28/07/1984', gender: 'Nam', specialty: 'Toán', currentPosition: 'Giáo viên', department: 'Toán - Tin', cccd: '036084020001' },
+  { stt: 5, fullName: 'Nguyễn Thị Tú Nhi', birthDate: '15/09/1986', gender: 'Nữ', specialty: 'Toán', currentPosition: 'Giáo viên', department: 'Toán - Tin', cccd: '066186014595' },
+  { stt: 6, fullName: 'Đinh Thị Nhị', birthDate: '20/12/1981', gender: 'Nữ', specialty: 'Toán', currentPosition: 'Giáo viên', department: 'Toán - Tin', cccd: '037181010414' },
+  { stt: 7, fullName: 'Đinh Văn Thành', birthDate: '14/07/1986', gender: 'Nam', specialty: 'Toán', currentPosition: 'Giáo viên', department: 'Toán - Tin', cccd: '044086011964' },
+  { stt: 8, fullName: 'Lê Văn Thịnh', birthDate: '12/11/1984', gender: 'Nam', specialty: 'Toán', currentPosition: 'CT CĐ, Tổ phó CM', department: 'Toán - Tin', cccd: '038084024275' },
+  { stt: 9, fullName: 'Nguyễn Ngọc Tuấn', birthDate: '02/02/1980', gender: 'Nam', specialty: 'Toán', currentPosition: 'Tổ trưởng CM', department: 'Toán - Tin', cccd: '066080000369' },
+  { stt: 10, fullName: 'Nguyễn Thị Nhung', birthDate: '05/12/1986', gender: 'Nữ', specialty: 'Tin học', currentPosition: 'Giáo viên', department: 'Toán - Tin', cccd: '038186041315' },
+  { stt: 11, fullName: 'Vũ Đức Thịnh', birthDate: '28/02/1982', gender: 'Nam', specialty: 'Tin học', currentPosition: 'TKHĐ, Tổ phó CM', department: 'Toán - Tin', cccd: '034082023571' },
+  { stt: 12, fullName: 'Nguyễn Thị Ngọc Yến', birthDate: '22/02/1989', gender: 'Nữ', specialty: 'Tin học', currentPosition: 'Giáo viên', department: 'Toán - Tin', cccd: '001189042273' },
+  { stt: 13, fullName: 'Cù Tuấn Khanh', birthDate: '01/09/1980', gender: 'Nam', specialty: 'Ngữ văn', currentPosition: 'Phó hiệu trưởng', department: 'Ngữ văn - Anh', cccd: '040080011856' },
+  { stt: 14, fullName: 'Nguyễn Thị Bân', birthDate: '08/03/1984', gender: 'Nữ', specialty: 'Ngữ văn', currentPosition: 'Giáo viên', department: 'Ngữ văn - Anh', cccd: '040184026109' },
+  { stt: 15, fullName: 'Nguyễn Xuân Hiền', birthDate: '20/09/1979', gender: 'Nam', specialty: 'Ngữ văn', currentPosition: 'Giáo viên', department: 'Ngữ văn - Anh', cccd: '040079001443' },
+  { stt: 16, fullName: 'Lê Thị Hiền', birthDate: '12/01/1984', gender: 'Nữ', specialty: 'Ngữ văn', currentPosition: 'Tổ phó CM', department: 'Ngữ văn - Anh', cccd: '040184023360' },
+  { stt: 17, fullName: 'Bùi Thị Hiệp', birthDate: '07/08/1979', gender: 'Nữ', specialty: 'Ngữ văn', currentPosition: 'Giáo viên', department: 'Ngữ văn - Anh', cccd: '042179016707' },
+  { stt: 18, fullName: 'Trần Thị Kết', birthDate: '10/02/1982', gender: 'Nữ', specialty: 'Ngữ văn', currentPosition: 'Giáo viên', department: 'Ngữ văn - Anh', cccd: '038182029894' },
+  { stt: 19, fullName: 'Võ Văn Chính', birthDate: '19/04/1985', gender: 'Nam', specialty: 'Ngữ văn', currentPosition: 'Giáo viên', department: 'Ngữ văn - Anh', cccd: '040085019932' },
+  { stt: 20, fullName: 'Lang Văn Năm', birthDate: '12/06/1980', gender: 'Nam', specialty: 'Ngữ văn', currentPosition: 'Giáo viên', department: 'Ngữ văn - Anh', cccd: '040080017686' },
+  { stt: 21, fullName: 'Vũ Thị Hoài', birthDate: '19/12/1989', gender: 'Nữ', specialty: 'Tiếng Anh', currentPosition: 'Giáo viên', department: 'Ngữ văn - Anh', cccd: '036189023505' },
+  { stt: 22, fullName: 'Ngô Thị Kim Liên', birthDate: '03/02/1984', gender: 'Nữ', specialty: 'Tiếng Anh', currentPosition: 'Giáo viên', department: 'Ngữ văn - Anh', cccd: '036184021667' },
+  { stt: 23, fullName: 'Phạm Thị Mai Linh', birthDate: '15/11/1987', gender: 'Nữ', specialty: 'Tiếng Anh', currentPosition: 'Giáo viên', department: 'Ngữ văn - Anh', cccd: '054187003193' },
+  { stt: 24, fullName: 'Lê Tống Hồng Thi', birthDate: '06/11/1978', gender: 'Nữ', specialty: 'Tiếng Anh', currentPosition: 'Tổ trưởng CM', department: 'Ngữ văn - Anh', cccd: '062178002696' },
+  { stt: 25, fullName: 'Lê Thị Thu Yến', birthDate: '13/09/1986', gender: 'Nữ', specialty: 'Tiếng Anh', currentPosition: 'Giáo viên', department: 'Ngữ văn - Anh', cccd: '066186005782' },
+  { stt: 26, fullName: 'Mai Tấn Tài', birthDate: '01/12/1999', gender: 'Nam', specialty: 'Tiếng Anh', currentPosition: 'Giáo viên', department: 'Ngữ văn - Anh', cccd: '067099003803' },
+  { stt: 27, fullName: 'Phạm Thị Thu Hằng', birthDate: '17/08/1984', gender: 'Nữ', specialty: 'GDCD', currentPosition: 'Giáo viên', department: 'GDTC - QPAN - KTPL', cccd: '034184013035' },
+  { stt: 28, fullName: 'Võ Thị Thanh Huệ', birthDate: '20/11/1985', gender: 'Nữ', specialty: 'GDCD', currentPosition: 'Phó CT CĐ', department: 'GDTC - QPAN - KTPL', cccd: '040185016491' },
+  { stt: 29, fullName: 'Lê Trung Huyên', birthDate: '20/12/1988', gender: 'Nam', specialty: 'GDTC', currentPosition: 'Giáo viên', department: 'GDTC - QPAN - KTPL', cccd: '040088040744' },
+  { stt: 30, fullName: 'Vũ Xuân Kế', birthDate: '14/01/1988', gender: 'Nam', specialty: 'GDTC', currentPosition: 'Giáo viên', department: 'GDTC - QPAN - KTPL', cccd: '036088012251' },
+  { stt: 31, fullName: 'Nguyễn Khắc Luyện', birthDate: '07/10/1978', gender: 'Nam', specialty: 'GDTC', currentPosition: 'Giáo viên', department: 'GDTC - QPAN - KTPL', cccd: '040078001347' },
+  { stt: 32, fullName: 'Phạm Bá Quyền', birthDate: '10/07/1982', gender: 'Nam', specialty: 'GDTC', currentPosition: 'Tổ trưởng CM', department: 'GDTC - QPAN - KTPL', cccd: '037082012550' },
+  { stt: 33, fullName: 'Nông Đỗ Hoài Thương', birthDate: '13/09/1999', gender: 'Nữ', specialty: 'GDQPAN', currentPosition: 'P.BT Đoàn TN', department: 'GDTC - QPAN - KTPL', cccd: '067199003244' },
+  { stt: 34, fullName: 'Nguyễn Hữu Hưng', birthDate: '30/06/1982', gender: 'Nam', specialty: 'GDQPAN', currentPosition: 'Giáo viên', department: 'GDTC - QPAN - KTPL', cccd: '038082040473' },
+  { stt: 35, fullName: 'Nguyễn Thị Dung', birthDate: '19/04/1991', gender: 'Nữ', specialty: 'Địa lí', currentPosition: 'Giáo viên', department: 'Sử - Địa', cccd: '067191000949' },
+  { stt: 36, fullName: 'Nguyễn Thị Nguyên', birthDate: '04/04/1985', gender: 'Nữ', specialty: 'Địa lí', currentPosition: 'Tổ phó CM', department: 'Sử - Địa', cccd: '040185032846' },
+  { stt: 37, fullName: 'Nguyễn Quang Phương', birthDate: '21/04/1986', gender: 'Nam', specialty: 'Địa lí', currentPosition: 'Giáo viên', department: 'Sử - Địa', cccd: '067086002916' },
+  { stt: 38, fullName: 'Hoàng Thị Thảo', birthDate: '18/04/1984', gender: 'Nữ', specialty: 'Địa lí', currentPosition: 'Giáo viên', department: 'Sử - Địa', cccd: '040184031984' },
+  { stt: 39, fullName: 'Hồ Bu', birthDate: '19/06/1977', gender: 'Nam', specialty: 'Lịch sử', currentPosition: 'Giáo viên', department: 'Sử - Địa', cccd: '042077000788' },
+  { stt: 40, fullName: 'Bùi Thị Châu', birthDate: '30/07/1980', gender: 'Nữ', specialty: 'Lịch sử', currentPosition: 'Tổ phó CM', department: 'Sử - Địa', cccd: '040180018845' },
+  { stt: 41, fullName: 'Nguyễn Thị Dung', birthDate: '05/03/1987', gender: 'Nữ', specialty: 'Lịch sử', currentPosition: 'Giáo viên', department: 'Sử - Địa', cccd: '040187018140' },
+  { stt: 42, fullName: 'H - Dom Eyă', birthDate: '21/11/1999', gender: 'Nữ', specialty: 'Lịch sử', currentPosition: 'P.BT Đoàn TN', department: 'Sử - Địa', cccd: '067199004258' },
+  { stt: 43, fullName: 'Huỳnh Xuân Quân', birthDate: '23/05/1987', gender: 'Nam', specialty: 'Vật lý', currentPosition: 'Phó hiệu trưởng', department: 'Khoa học Tự nhiên', cccd: '067087003075' },
+  { stt: 44, fullName: 'Phạm Hữu Chỉnh', birthDate: '02/02/1985', gender: 'Nam', specialty: 'Hóa học', currentPosition: 'Giáo viên', department: 'Khoa học Tự nhiên', cccd: '036085015475' },
+  { stt: 45, fullName: 'Nguyễn Thị Hà', birthDate: '20/09/1983', gender: 'Nữ', specialty: 'Hóa học', currentPosition: 'Giáo viên', department: 'Khoa học Tự nhiên', cccd: '040183032363' },
+  { stt: 46, fullName: 'Phạm Đình Khởi', birthDate: '10/06/1983', gender: 'Nam', specialty: 'Hóa học', currentPosition: 'Tổ phó CM', department: 'Khoa học Tự nhiên', cccd: '051083006088' },
+  { stt: 47, fullName: 'Trần Trọng Nghĩa', birthDate: '03/11/1977', gender: 'Nam', specialty: 'Hóa học', currentPosition: 'Giáo viên', department: 'Khoa học Tự nhiên', cccd: '052077011267' },
+  { stt: 48, fullName: 'Nguyễn Lê Thị Đài Trang', birthDate: '27/08/1988', gender: 'Nữ', specialty: 'Hóa học', currentPosition: 'Giáo viên', department: 'Khoa học Tự nhiên', cccd: '067188000230' },
+  { stt: 49, fullName: 'Phạm Thị Thanh', birthDate: '19/06/1984', gender: 'Nữ', specialty: 'Sinh học', currentPosition: 'Giáo viên', department: 'Khoa học Tự nhiên', cccd: '042184005837' },
+  { stt: 50, fullName: 'Quang Thị Kim Phượng', birthDate: '18/01/1982', gender: 'Nữ', specialty: 'Sinh học', currentPosition: 'Giáo viên', department: 'Khoa học Tự nhiên', cccd: '067182002298' },
+  { stt: 51, fullName: 'Kiều Thị Thúy Diễm', birthDate: '13/07/1979', gender: 'Nữ', specialty: 'Sinh học', currentPosition: 'Tổ trưởng CM', department: 'Khoa học Tự nhiên', cccd: '067179002095' },
+  { stt: 52, fullName: 'Nguyễn Đức Kiên', birthDate: '25/04/1985', gender: 'Nam', specialty: 'Vật lý', currentPosition: 'Giáo viên', department: 'Khoa học Tự nhiên', cccd: '037085010665' },
+  { stt: 53, fullName: 'Lê Thị Lan', birthDate: '25/06/1988', gender: 'Nữ', specialty: 'Vật lý', currentPosition: 'Giáo viên', department: 'Khoa học Tự nhiên', cccd: '066188016868' },
+  { stt: 54, fullName: 'Lê Văn Thân', birthDate: '27/05/1983', gender: 'Nam', specialty: 'Vật lý', currentPosition: 'Tổ phó CM', department: 'Khoa học Tự nhiên', cccd: '038083048793' },
+  { stt: 55, fullName: 'Ngô Trọng Tuân', birthDate: '15/12/1985', gender: 'Nam', specialty: 'Vật lý', currentPosition: 'Giáo viên', department: 'Khoa học Tự nhiên', cccd: '064085009780' },
+  { stt: 56, fullName: 'Đoàn Thị Tươi', birthDate: '08/06/1985', gender: 'Nữ', specialty: 'Vật lý', currentPosition: 'Giáo viên', department: 'Khoa học Tự nhiên', cccd: '036185026229' },
+  { stt: 57, fullName: 'Nguyễn Văn Bồi', birthDate: '05/10/1982', gender: 'Nam', specialty: 'Kế toán', currentPosition: 'TTVP, Kế toán', department: 'Văn phòng', cccd: '045082004379' },
+  { stt: 58, fullName: 'Nguyễn Thị Hải Hạnh', birthDate: '08/08/1983', gender: 'Nữ', specialty: 'Kế toán', currentPosition: 'TPVP, VT-TQ', department: 'Văn phòng', cccd: '045082004379' },
+  { stt: 59, fullName: 'Bửu Thị Phượng', birthDate: '13/02/1988', gender: 'Nữ', specialty: 'Thiết bị', currentPosition: 'Thiết bị', department: 'Khoa học Tự nhiên', cccd: '066183005408' },
+  { stt: 60, fullName: 'Lê Thị Hồng Vân', birthDate: '06/01/2001', gender: 'Nữ', specialty: 'Y tế', currentPosition: 'Y tế', department: 'Văn phòng', cccd: '066301002318' },
+  { stt: 61, fullName: 'Hà Thị Thanh Nga', birthDate: '10/12/1985', gender: 'Nữ', specialty: 'Thư viện', currentPosition: 'Thư viện', department: 'Sử - Địa', cccd: '040188003086' },
+  { stt: 62, fullName: 'Nguyễn Thị Hương', birthDate: '18/03/1990', gender: 'Nữ', specialty: 'Lịch sử', currentPosition: 'Giáo viên', department: 'Sử - Địa', cccd: '026190017591' },
+  { stt: 63, fullName: 'Phan Thảo Quyên', birthDate: '29/01/2003', gender: 'Nữ', specialty: 'Địa lí', currentPosition: 'Giáo viên', department: 'Sử - Địa', cccd: '067303000406' },
+  { stt: 64, fullName: 'Lê Thị Tứ', birthDate: '12/02/1993', gender: 'Nữ', specialty: 'Ngữ văn', currentPosition: 'Giáo viên', department: 'Ngữ văn - Anh', cccd: '052193003325' }
+];

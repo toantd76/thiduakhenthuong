@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 530" width="100%" height="100%">
+  <defs>
+    <!-- Top Arc for School Title -->
+    <!-- Arc running clockwise from left to right along upper perimeter -->
+    <path id="textArcTop" d="M 68,260 A 185,185 0 1,1 432,260" fill="none" />
+    <!-- Gradient for Flame -->
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#cc1818" />
+      <stop offset="50%" stop-color="#ea2825" />
+      <stop offset="100%" stop-color="#f54336" />
+    </linearGradient>
+    <!-- Filter for subtle crispness -->
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- ==================== 1. OUTER CIRCULAR RIMS ==================== -->
+  <!-- Outer most thin border -->
+  <circle cx="250" cy="240" r="228" fill="none" stroke="#007cb9" stroke-width="3" />
+  <!-- White spacer ring -->
+  <circle cx="250" cy="240" r="225" fill="#ffffff" />
+  <!-- Main outer blue ring -->
+  <circle cx="250" cy="240" r="222" fill="#007cb9" stroke="#006ca3" stroke-width="1.5" />
+
+  <!-- Inner white disk (Main content background) -->
+  <circle cx="250" cy="240" r="162" fill="#ffffff" stroke="#007cb9" stroke-width="4.5" />
+  <!-- Secondary fine inner border line -->
+  <circle cx="250" cy="240" r="158" fill="none" stroke="#e0f2fe" stroke-width="1" />
+
+  <!-- ==================== 2. TEXT IN BLUE RING ==================== -->
+  <text fill="#ffffff" font-family="'Be Vietnam Pro', 'Montserrat', 'Arial', sans-serif" font-size="22.5" font-weight="900" letter-spacing="1.5">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+      ★ TRƯỜNG TRUNG HỌC PHỔ THÔNG ★
+    </textPath>
+  </text>
+
+  <!-- ==================== 3. GOLDEN LAUREL WREATH (LOWER SIDES) ==================== -->
+  <!-- Left Laurel Branch -->
+  <g fill="#ffc800" stroke="#d99b00" stroke-width="1" filter="url(#softGlow)">
+    <!-- Leaf 1 -->
+    <path d="M 125,320 C 110,312 95,330 92,342 C 102,340 115,335 125,320 Z" />
+    <!-- Leaf 2 -->
+    <path d="M 112,300 C 96,295 86,312 84,324 C 95,321 106,315 112,300 Z" />
+    <!-- Leaf 3 -->
+    <path d="M 103,278 C 86,274 78,290 77,302 C 88,299 98,292 103,278 Z" />
+    <!-- Leaf 4 -->
+    <path d="M 96,255 C 80,252 74,268 73,280 C 84,277 93,269 96,255 Z" />
+    <!-- Leaf 5 -->
+    <path d="M 94,230 C 78,228 73,244 74,256 C 84,252 92,243 94,230 Z" />
+    <!-- Leaf 6 -->
+    <path d="M 98,206 C 83,205 78,220 80,232 C 90,227 96,218 98,206 Z" />
+    <!-- Leaf 7 -->
+    <path d="M 106,183 C 92,183 88,197 91,208 C 100,203 105,194 106,183 Z" />
+    <!-- Laurel Stem Left -->
+    <path d="M 145,355 Q 85,290 110,180" fill="none" stroke="#ffc800" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Right Laurel Branch (Mirrored) -->
+  <g fill="#ffc800" stroke="#d99b00" stroke-width="1" filter="url(#softGlow)">
+    <!-- Leaf 1 -->
+    <path d="M 375,320 C 390,312 405,330 408,342 C 398,340 385,335 375,320 Z" />
+    <!-- Leaf 2 -->
+    <path d="M 388,300 C 404,295 414,312 416,324 C 405,321 394,315 388,300 Z" />
+    <!-- Leaf 3 -->
+    <path d="M 397,278 C 414,274 422,290 423,302 C 412,299 402,292 397,278 Z" />
+    <!-- Leaf 4 -->
+    <path d="M 404,255 C 420,252 426,268 427,280 C 416,277 407,269 404,255 Z" />
+    <!-- Leaf 5 -->
+    <path d="M 406,230 C 422,228 427,244 426,256 C 416,252 408,243 406,230 Z" />
+    <!-- Leaf 6 -->
+    <path d="M 402,206 C 417,205 422,220 420,232 C 410,227 404,218 402,206 Z" />
+    <!-- Leaf 7 -->
+    <path d="M 394,183 C 408,183 412,197 409,208 C 400,203 395,194 394,183 Z" />
+    <!-- Laurel Stem Right -->
+    <path d="M 355,355 Q 415,290 390,180" fill="none" stroke="#ffc800" stroke-width="2.5" stroke-linecap="round" />
+  </g>
+
+  <!-- ==================== 4. CENTRAL TORCH & FLAME ==================== -->
+  <!-- Upper Flame (Lửa đuốc) -->
+  <g id="torch-flame">
+    <!-- Main red flame -->
+    <path d="M 250,90 
+             C 278,118 290,140 274,168 
+             C 264,152 258,145 250,138 
+             C 242,145 236,152 226,168 
+             C 210,140 222,118 250,90 Z" 
+          fill="url(#flameGrad)" />
+    <!-- Flame inner tongue left -->
+    <path d="M 250,110 C 262,126 268,142 256,158 C 250,148 248,142 250,110 Z" fill="#f03e3e" opacity="0.6" />
+    <!-- Flame highlight center -->
+    <path d="M 248,98 C 255,110 258,124 252,136 C 248,126 247,118 248,98 Z" fill="#ff6b6b" opacity="0.8" />
+  </g>
+
+  <!-- Stepped Torch Bowl / Collar (Đài đuốc) -->
+  <g id="torch-collar" fill="#007cb9">
+    <!-- Tier 1 (Top rim) -->
+    <rect x="220" y="168" width="60" height="7" rx="3.5" stroke="#ffffff" stroke-width="1" />
+    <!-- Tier 2 -->
+    <rect x="225" y="176" width="50" height="5" rx="2" stroke="#ffffff" stroke-width="0.8" />
+    <!-- Tier 3 -->
+    <rect x="230" y="182" width="40" height="4" rx="2" stroke="#ffffff" stroke-width="0.8" />
+    <!-- Tier 4 -->
+    <rect x="233" y="187" width="34" height="4" rx="1.5" stroke="#ffffff" stroke-width="0.8" />
+  </g>
+
+  <!-- Torch Handle / Shaft (Thân đuốc) -->
+  <path d="M 235,192 L 265,192 L 257,325 L 243,325 Z" fill="#007cb9" stroke="#ffffff" stroke-width="1.2" />
+
+  <!-- Torch Base Rim -->
+  <rect x="240" y="325" width="20" height="4" rx="1.5" fill="#007cb9" stroke="#ffffff" stroke-width="0.8" />
+
+  <!-- Torch Numbers: 2 0 0 3 -->
+  <g fill="#ffffff" font-family="'Be Vietnam Pro', 'Arial', sans-serif" font-weight="900" font-size="16.5" text-anchor="middle">
+    <text x="250" y="217">2</text>
+    <text x="250" y="247">0</text>
+    <text x="250" y="277">0</text>
+    <text x="250" y="307">3</text>
+  </g>
+
+  <!-- ==================== 5. OPEN BOOK ON THE LEFT ==================== -->
+  <g id="open-book" transform="translate(182, 235) rotate(-10)">
+    <!-- Right Page (Behind) -->
+    <path d="M 0,0 C 18,-6 38,-4 52,4 L 50,42 C 36,34 16,32 0,38 Z" fill="#f0f9ff" stroke="#007cb9" stroke-width="2.5" />
+    <!-- Left Page (Front) -->
+    <path d="M 0,0 C -18,-6 -38,-4 -52,4 L -50,42 C -36,34 -16,32 0,38 Z" fill="#ffffff" stroke="#007cb9" stroke-width="2.5" />
+    <!-- Spine center shadow -->
+    <line x1="0" y1="0" x2="0" y2="38" stroke="#007cb9" stroke-width="2.5" />
+    
+    <!-- Flower/Asterisk Icon on Left Page -->
+    <g transform="translate(-32, 14) scale(0.65)" stroke="#007cb9" stroke-width="2" stroke-linecap="round">
+      <line x1="-7" y1="0" x2="7" y2="0" />
+      <line x1="0" y1="-7" x2="0" y2="7" />
+      <line x1="-5" y1="-5" x2="5" y2="5" />
+      <line x1="-5" y1="5" x2="5" y2="-5" />
+    </g>
+
+    <!-- GD Text on Left Page -->
+    <text x="-24" y="32" fill="#007cb9" font-family="'Be Vietnam Pro', 'Arial', sans-serif" font-weight="900" font-size="16" letter-spacing="0.5">GD</text>
+
+    <!-- Content Lines on Right Page -->
+    <line x1="12" y1="12" x2="42" y2="15" stroke="#bae6fd" stroke-width="2" stroke-linecap="round" />
+    <line x1="12" y1="20" x2="40" y2="23" stroke="#bae6fd" stroke-width="2" stroke-linecap="round" />
+    <line x1="12" y1="28" x2="36" y2="31" stroke="#bae6fd" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- ==================== 6. RED "S" RIBBON (SWIRLING AROUND TORCH) ==================== -->
+  <g id="ribbon-s">
+    <!-- Upper loop of S: starting behind flame, looping left and forward across upper shaft -->
+    <path d="M 218,185 
+             C 190,190 180,215 192,238 
+             C 205,260 230,265 258,260 
+             C 275,257 282,248 280,240 
+             C 275,248 262,254 246,252 
+             C 220,248 205,238 204,222 
+             C 202,208 214,195 235,190 Z" 
+          fill="#e02926" />
+    
+    <!-- Lower sweeping loop of S: crossing right and wrapping down toward bottom left -->
+    <path d="M 248,256
+             C 285,258 318,280 308,312 
+             C 298,340 262,352 230,345 
+             C 215,342 208,335 214,328 
+             C 222,335 240,338 258,335 
+             C 285,330 295,310 286,290 
+             C 276,272 250,266 235,263 Z" 
+          fill="#e02926" />
+  </g>
+
+  <!-- ==================== 7. OLYMPIC RINGS ==================== -->
+  <g id="olympic-rings" transform="translate(250, 360)">
+    <!-- Top 3 Rings: Blue, Black, Red -->
+    <!-- Blue (Left) -->
+    <circle cx="-32" cy="-6" r="14" fill="none" stroke="#007cb9" stroke-width="3.2" />
+    <!-- Black (Middle) -->
+    <circle cx="0" cy="-6" r="14" fill="none" stroke="#1e293b" stroke-width="3.2" />
+    <!-- Red (Right) -->
+    <circle cx="32" cy="-6" r="14" fill="none" stroke="#e02926" stroke-width="3.2" />
+
+    <!-- Bottom 2 Rings: Yellow, Green -->
+    <!-- Yellow (Between Blue and Black) -->
+    <circle cx="-16" cy="7" r="14" fill="none" stroke="#f59e0b" stroke-width="3.2" />
+    <!-- Green (Between Black and Red) -->
+    <circle cx="16" cy="7" r="14" fill="none" stroke="#10b981" stroke-width="3.2" />
+  </g>
+
+  <!-- ==================== 8. WINGED WATER WAVES (FLANKING OLYMPIC RINGS) ==================== -->
+  <g id="water-waves" stroke-linecap="round" fill="none">
+    <!-- Left Waves -->
+    <path d="M 195,355 C 175,348 155,354 135,368 C 155,364 175,366 190,375" stroke="#007cb9" stroke-width="4.5" />
+    <path d="M 188,368 C 172,362 158,368 145,380" stroke="#38bdf8" stroke-width="3" />
+    <path d="M 185,345 C 168,338 152,342 140,352" stroke="#007cb9" stroke-width="2.5" />
+
+    <!-- Right Waves -->
+    <path d="M 305,355 C 325,348 345,354 365,368 C 345,364 325,366 310,375" stroke="#007cb9" stroke-width="4.5" />
+    <path d="M 312,368 C 328,362 342,368 355,380" stroke="#38bdf8" stroke-width="3" />
+    <path d="M 315,345 C 332,338 348,342 360,352" stroke="#007cb9" stroke-width="2.5" />
+  </g>
+
+  <!-- ==================== 9. ENGLISH NAME: DAK SONG HIGH SCHOOL ==================== -->
+  <text x="250" y="405" 
+        fill="#e02926" 
+        font-family="'Be Vietnam Pro', 'Arial', sans-serif" 
+        font-size="14.5" 
+        font-weight="900" 
+        text-anchor="middle" 
+        letter-spacing="1">
+    DAK SONG HIGH SCHOOL
+  </text>
+
+  <!-- ==================== 10. BOTTOM BANNER: ĐẮK SONG ==================== -->
+  <g id="bottom-banner" transform="translate(250, 460)">
+    <!-- Outer Banner Silhouette with 3D ends -->
+    <!-- Left banner fold -->
+    <path d="M -180,-10 L -150,-26 L -150,8 L -180,-4 Z" fill="#005580" stroke="#007cb9" stroke-width="1.5" />
+    <!-- Right banner fold -->
+    <path d="M 180,-10 L 150,-26 L 150,8 L 180,-4 Z" fill="#005580" stroke="#007cb9" stroke-width="1.5" />
+
+    <!-- Main Curved Banner Body -->
+    <path d="M -165,-24 
+             C -60,-15 60,-15 165,-24 
+             C 172,-10 168,14 150,22 
+             C 60,34 -60,34 -150,22 
+             C -168,14 -172,-10 -165,-24 Z" 
+          fill="#007cb9" 
+          stroke="#ffffff" 
+          stroke-width="3.5" />
+
+    <!-- Inner White Accent Framing Line -->
+    <path d="M -155,-17 
+             C -55,-8 55,-8 155,-17 
+             C 160,-6 156,9 142,16 
+             C 55,26 -55,26 -142,16 
+             C -156,9 -160,-6 -155,-17 Z" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="1.8" />
+
+    <!-- Banner Text: ĐẮK SONG -->
+    <text x="0" y="8" 
+          fill="#ffffff" 
+          font-family="'Be Vietnam Pro', 'Montserrat', 'Arial', sans-serif" 
+          font-size="27" 
+          font-weight="900" 
+          text-anchor="middle" 
+          letter-spacing="4"
+          filter="url(#softGlow)">
+      ĐẮK SONG
+    </text>
+  </g>
+</svg>

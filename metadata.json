@@ -1,0 +1,6 @@
+{
+  "name": "Hệ thống Thi đua - THPT Đắk Song",
+  "description": "Hệ thống đăng ký, theo dõi và đánh giá thi đua - khen thưởng năm học 2026-2027 Trường THPT Đắk Song, tỉnh Lâm Đồng",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

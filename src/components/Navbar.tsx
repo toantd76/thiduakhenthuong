@@ -53,7 +53,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-30 bg-white border-b border-slate-200 shadow-xs">
+    <header className="sticky top-0 z-30 bg-gradient-to-r from-blue-100 via-sky-100 to-indigo-100 border-b border-blue-200/90 shadow-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Left: Mobile Toggle & School Branding */}
@@ -61,30 +61,32 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               id="sidebar-toggle-btn"
               onClick={onToggleSidebar}
-              className="lg:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-hidden"
+              className="lg:hidden p-2 rounded-lg text-blue-950 hover:text-blue-900 hover:bg-white/80 focus:outline-hidden"
               aria-label="Toggle Sidebar"
             >
               <Menu className="w-6 h-6" />
             </button>
 
-            {/* School Logo */}
+            {/* School Logo & Title */}
             <div className="flex items-center gap-3">
-              <img
-                src="/logo.png"
-                alt="Logo THPT Đắk Song"
-                referrerPolicy="no-referrer"
-                className="w-14 h-14 sm:w-16 sm:h-16 object-contain shrink-0 drop-shadow-xs"
-              />
+              <div className="p-1 sm:p-1.5 bg-white/95 rounded-2xl shadow-xs border border-blue-200/70 shrink-0 flex items-center justify-center">
+                <img
+                  src="/logo.png"
+                  alt="Logo THPT Đắk Song"
+                  referrerPolicy="no-referrer"
+                  className="w-12 h-12 sm:w-14 sm:h-14 object-contain"
+                />
+              </div>
               <div className="leading-tight">
-                <div className="text-xs sm:text-sm font-bold uppercase tracking-wider text-blue-900">
+                <div className="text-xs sm:text-sm font-bold uppercase tracking-wider text-blue-950">
                   SỞ GD&ĐT TỈNH LÂM ĐỒNG
                 </div>
-                <h1 className="text-sm sm:text-lg font-black tracking-tight text-blue-800 uppercase">
+                <h1 className="text-base sm:text-xl font-black tracking-tight text-blue-900 uppercase">
                   TRƯỜNG THPT ĐẮK SONG
                 </h1>
-                <div className="text-xs sm:text-sm font-semibold text-slate-700">
-                  HỆ THỐNG ĐĂNG KÝ VÀ THEO DÕI THI ĐUA
-                  <span className="hidden sm:inline font-bold text-amber-700 ml-1.5 px-2 py-0.5 bg-amber-50 rounded-md border border-amber-200">
+                <div className="text-xs sm:text-sm font-bold text-blue-950/85 flex items-center flex-wrap gap-1.5 mt-0.5">
+                  <span>HỆ THỐNG ĐĂNG KÝ VÀ THEO DÕI THI ĐUA</span>
+                  <span className="hidden sm:inline font-extrabold text-amber-900 px-2 py-0.5 bg-amber-100/90 rounded-md border border-amber-300 shadow-2xs">
                     Năm học 2026–2027
                   </span>
                 </div>
@@ -97,7 +99,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {currentUser ? (
               <div className="flex items-center gap-3">
                 {/* Year Tag on mobile */}
-                <span className="sm:hidden text-xs font-bold text-amber-800 bg-amber-50 px-2 py-1 rounded border border-amber-200">
+                <span className="sm:hidden text-xs font-bold text-amber-900 bg-amber-100/90 px-2 py-1 rounded border border-amber-300">
                   26–27
                 </span>
 
@@ -107,7 +109,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <span>{currentUser.fullName}</span>
                   </div>
                   <div className="flex items-center gap-1 mt-0.5 flex-wrap justify-end">
-                    <span className="text-xs text-slate-500 font-medium mr-1">
+                    <span className="text-xs text-blue-950/70 font-medium mr-1">
                       {currentUser.department}
                     </span>
                     {(currentUser.roles || []).map((r) => {
@@ -125,12 +127,12 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex items-center gap-1.5 border-l border-slate-200 pl-2 sm:pl-3">
+                <div className="flex items-center gap-1.5 border-l border-blue-200/80 pl-2 sm:pl-3">
                   <button
                     id="btn-change-password"
                     onClick={handlePasswordModal}
                     title="Đổi mật khẩu"
-                    className="p-2 text-slate-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-colors"
+                    className="p-2 text-slate-700 hover:text-blue-900 hover:bg-white/80 rounded-lg transition-colors"
                   >
                     <KeyRound className="w-5 h-5" />
                   </button>
@@ -138,7 +140,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     id="btn-logout"
                     onClick={handleLogout}
                     title="Đăng xuất"
-                    className="p-2 text-slate-600 hover:text-rose-700 hover:bg-rose-50 rounded-lg transition-colors flex items-center gap-1"
+                    className="p-2 text-slate-700 hover:text-rose-700 hover:bg-white/80 rounded-lg transition-colors flex items-center gap-1"
                   >
                     <LogOut className="w-5 h-5" />
                     <span className="hidden xl:inline text-xs font-semibold">Đăng xuất</span>
